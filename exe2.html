@@ -1,44 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
 </body>
 <script>
-let groceries=
-[
-{item:"eggs",quantity:20, bought: true},
-{item:"water",quantity:7, bought: false},
-{item:"chicken",quantity:2, bought: false},
-]
-groceries.forEach(element => {
-console.log(`thr name of the item is:${item},quantity is:${quantity}` )    
-if(bought==true){console.log("bought")}
-else{console.log("not bought")}
+    let groceries =
+        [
+            { item: "eggs", quantity: 20, bought: true },
+            { item: "water", quantity: 7, bought: false },
+            { item: "chicken", quantity: 2, bought: false },
+        ]
+    groceries.forEach(element => {
+        console.log(`the name of the item is:${element.item},quantity is:${element.quantity}`)
+        if (element.bought == true) { console.log("bought") }
+        else { console.log("not bought") }
+    })
 
-
-
-}
-);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    console.log(Object.keys({ item: "water", quantity: 7, bought: false },))
 </script>
+
 </html>

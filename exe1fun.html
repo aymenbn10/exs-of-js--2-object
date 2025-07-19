@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    /* FUNCTION FOR CALCULATION OF AREA AND PARAMETER */
+
+    const calcarea = (length, width) =>
+
+        length * width;
+
+    console.log(calcarea(4, 6))
+    const calcperimeter = (length, width) =>
+        (length * width) * 2;
+    console.log(calcperimeter(2, 3))
+
+    const calcall = (length, width) => {
+        const area = length * width;
+        const perimeter = (length * width) * 2;
+        return (`the perimeter is:${perimeter} and the area is:${area}`)
+
+    }
+    console.log(calcall(2, 2))
+
+    /* FUNCTION FOR CONVERTING TEMPERATURE FROM CELSUIS TO FAHRENHEIT */
+
+/* CELSIUS TO FAHRENHEIT */
+    const convertingcetofa = (celsius) => {
+        const temp1 = celsius * (9 / 5) + 32;
+        return temp1;
+    }
+
+    console.log(convertingcetofa(4));
+/* fahrenheit to celsius */
+    const convertingfatoce = (fahrenheit) => {
+const temp2= (fahrenheit-32)/(9/5);
+    return temp2;
+}
+console.log(convertingfatoce(39.2));
+
+/* both of them  */
+
+
+
+
+</script>
+
+</html>

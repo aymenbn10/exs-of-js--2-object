@@ -11,31 +11,8 @@
     <p>some exercices of js</p>
 
 </body>
-<script>
 
-
-
-    let players =
-        [
-            { name: "aymen", level: 10, online: true, },
-            { name: "moh", level: 16, online: false, },
-            { name: "hmida", level: 4, online: true, },
-            { name: "raouf", level: 6, online: true, },
-        ]
-
-    const onlineplayers = players.filter(player => player.online)
-    onlineplayers.forEach(player => console.log(player.name))
-
-    const onlinenames = onlineplayers.map(player => onlineplayers.name)
-    console.log(`name of online players are:${onlinenames}`)
-    for (const player of players) {
-        if (player.online) {
-            console.log(`welcome back ${player.name}! `)
-        }
-        else {
-            console.log(`see you next time ${player.name}! `)
-        }
-    }
+    
 </script>
 
 </html>
